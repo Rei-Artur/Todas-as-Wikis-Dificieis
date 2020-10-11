@@ -1,0 +1,24 @@
+Gatilho: <prefixo do seu bot>apostar
+
+Wiki/Comando:
+
+$textSplit[$message;] 
+
+$setUserVar[sua var(variável) de dinheiro;$$randomText[sub;sum;sub;sub][$getUserVar[sua var(variável) de dinheiro;$authorID];$message];$authorID]
+$onlyIf[$isNumber[$noMentionMessage]==true;<a:errado:743498141357047839>|**Desculpe mas eu você só pode apostar números!**]
+$title[ 🎰 | Apostar Dindin]
+$color[00ffff]
+$description[↘️========↙️
+⠀⠀$replaceText[$replaceText[$randomText[sub;sum;sub;sub];sum;$randomText[🍓-🍓-🍓;🍑-🍑-🍑;🍈-🍈-🍈;🍒-🍒-🍒;🍋🍋🍋;🍊-🍊-🍊];1];sub;$randomText[🍊-🍒-🍋;🍈-🍓-🍒;🍑-🍒-🍊;🍋-🍓-🍈;🍑-🍓-🍓;🍈-🍑-🍊];1] 
+⠀⠀$replaceText[$replaceText[$randomText[sub;sum;sub;sub];sum;$randomText[🍓-🍓-🍓;🍋-🍋-🍋;🍈-🍈-🍈;🍒-🍒-🍒;🍑-🍑-🍑;🍊-🍊-🍊];1];sub;$randomText[🍊-🍒-🍋;🍈-🍓-🍒;🍑-🍒-🍊;🍋-🍓-🍈;🍑-🍓-🍓;🍈-🍋-🍊];1] 
+⠀⠀$replaceText[$replaceText[$randomText[sub;sum;sub;sub];sum;$randomText[🍒-🍒-🍒;🍑-🍑-🍑;🍈-🍈-🍈;🍓-🍓-🍓;🍋-🍋-🍋;🍊-🍊-🍊];1];sub;$randomText[🍊-🍒-🍋;🍈-🍓-🍒;🍑-🍒-🍊;🍋-🍓-🍈;🍑-🍊-🍓;🍈-🍑-🍊];1] 
+↗️========↖️
+**$username você $replaceText[$replaceText[$randomText[sub;sum;sub;sub];sum;ganhou $message Reais!;1];sub;Perdeu $message Reais!;1]**]
+
+$onlyIf[$message!=;<:errado1:760520872170618910>| Por favor ponha o valor para apostar!]
+
+$onlyIf[$splitText[6]==;<:errado1:760520872170618910>|Ei ei ei, o máximo que você pode apostar e 999999 Reais!]
+
+$onlyIf[$message<$getUserVar[sua var(variável) de dinheiro;$authorID];<:errado1:760520872170618910>|IHHHH, você ta pobre heim lhe falta dinheiro para apostar. ``$getUserVar[sua var(variável) de dinheiro;$authorID]/$message``]
+$globalCooldown[2m;<:errado1:760520872170618910>|<@$authorID> Calma meu amiginho, espere %time% para apostar de novo!]
+
