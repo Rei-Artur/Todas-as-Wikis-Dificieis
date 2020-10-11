@@ -1,0 +1,9 @@
+Gatilho: <só o prefixo do seu bot>
+
+Wiki/Comando:
+
+$nomention
+$onlyIf[$checkContains[$toLowercase[$message];botinfo;ajuda;aqui você coloca todos os comandos do seu bot SEM o prefixo, lembrando que a cada comando tem que colocar um ;]==true;<@$authorID> **O Comando `t.$message` não existe no meu sistema de bot,talvez você esqueceu ou errou o comando,por que não tenta de novo?!Caso precise de ajuda digite** ``t.ajuda``!]
+$deleteIn[15s]
+
+
