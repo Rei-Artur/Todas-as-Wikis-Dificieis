@@ -1,0 +1,15 @@
+Gatilho: <prefixo do seu bot>website
+
+Wiki/Comando:
+
+$nomention
+
+$argsCheck[>1;Tente me dar um domínio/link de site!]
+
+$onlyIfMessageContains[$message;https://;Uso correto: ``<prefixo do seu bot>website https://$message``]
+
+$title[Visualização do Site]
+$description[[ABRIR SITE]($message)]
+$footer[]
+$color[$random[0;999999]]
+$image[https://image.thum.io/get/$message/]
