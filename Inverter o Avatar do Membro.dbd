@@ -1,0 +1,14 @@
+Gatilho: <prefixo do seu bot>invertava
+
+Wiki/Comando:
+
+$nomention
+$onlyIf[!=$mentioned[1];Você precisa mencionar alguém para ver o avatar invertido]
+$title[Avatar Invertido]
+$description[<@$authorID> Esse é o Avatar invertido do(a) <@$mentioned[1]>.
+<:download:760581026245640243>|Para baixar clique [**aqui**](https://api.alexflipnote.dev/filter/invert?image=$userAvatar[$mentioned[1;yes]]?size=2048).]
+$color[#fffff]
+$image[https://api.alexflipnote.dev/filter/invert?image=$userAvatar[$mentioned[1;yes]]?size=2048]
+$footer[Comando executado por $username]
+$footerIcon[$authorAvatar]
+$deletecommand
